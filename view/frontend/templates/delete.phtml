@@ -1,9 +1,11 @@
-<form class="form" action="delete" method="post">
-    <div class="actions-toolbar">
-        <div class="primary">
-            <button type="submit" class="action submit primary" title="<?php /* @escapeNotVerified */ echo __('Submit') ?>">
-                <span><?php /* @escapeNotVerified */ echo __('Submit') ?></span>
-            </button>
-        </div>
-    </div>
-</form>
+<button type="submit" class="action submit primary" title="<?php /* @escapeNotVerified */ echo __('Delete') ?>" id="delete-button">
+    <span><?php /* @escapeNotVerified */ echo __('Delete') ?></span>
+</button>
+
+<script type="text/x-magento-init">
+    {
+        "*": {
+            "Niall_CustomerDeleteMyAccount/delete":{}
+        }
+    }
+</script>
