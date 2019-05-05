@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceBlock name="customer_account_navigation">
+            <block class="Magento\Framework\View\Element\Html\Link\Current" name="customer-account-navigation-custom-link" after="-">
+                <arguments>
+                    <argument name="path" xsi:type="string">customerdelete/customerdelete</argument>
+                    <argument name="label" xsi:type="string">Delete My Account</argument>
+                    <argument name="sortOrder" xsi:type="number">500</argument>
+                </arguments>
+            </block>
+        </referenceBlock>
+    </body>
+</page>
